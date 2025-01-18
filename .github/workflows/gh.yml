@@ -10,5 +10,5 @@ jobs:
       - name: Hello
         run: echo Hello, world!
 
-      - name: Version gh
-        run: gh --version
+      - name: explain
+        run: gh copilot explain "sudo apt-get"
