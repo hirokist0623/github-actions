@@ -1,0 +1,14 @@
+name: gh
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Hello
+        run: echo Hello, world!
+
+      - name: Version gh
+        run: gh --version
